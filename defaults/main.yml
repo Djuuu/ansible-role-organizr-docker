@@ -1,0 +1,19 @@
+---
+
+# Docker project variables
+
+organizr_project_name: organizr
+
+# Main service additional docker-compose options (ex: cpu_shares, deploy, ...)
+organizr_compose_service_additional_options: |
+  #ports:
+  #  - 80:80
+
+organizr_traefik_middlewares:
+  - "internal-access@file"
+
+
+# Organizr project variables
+
+# organizr/organizr image version
+organizr_version: latest
