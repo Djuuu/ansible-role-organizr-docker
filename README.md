@@ -50,6 +50,9 @@ organizr_traefik_middlewares:
 
 # organizr/organizr image version
 organizr_version: latest
+
+# Organizr network mode (bridge|host)
+organizr_network_mode: bridge
 ```
 
 Dependencies
