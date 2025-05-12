@@ -25,3 +25,8 @@ organizr_pgid: "{{ ansible_user_gid }}"
 
 # Organizr network mode (bridge|host)
 organizr_network_mode: bridge
+
+# Additional volumes mounted in container
+organizr_additional_volumes: []
+#  - /mnt/backup/medusa:/config/backup
+#  - /mnt/logs/medusa:/config/log

@@ -23,6 +23,9 @@ services:
 
     volumes:
       - ./config:/config
+      {% for item in organizr_additional_volumes %}
+      - {{ item }}
+      {% endfor %}
 
     labels:
       {{ traefik_project_base_labels | indent(6) }}
