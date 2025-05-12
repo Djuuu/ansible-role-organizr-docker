@@ -17,8 +17,8 @@ services:
     {{ docker_project_compose_service_additional_options | indent(4) }}
 
     environment:
-      - PUID={{ ansible_user_uid }}
-      - PGID={{ ansible_user_gid }}
+      - PUID={{ organizr_puid }}
+      - PGID={{ organizr_pgid }}
       - TZ={{ timezone | default('UTC') }}
 
     volumes:

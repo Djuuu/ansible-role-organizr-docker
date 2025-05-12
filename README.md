@@ -51,6 +51,11 @@ organizr_traefik_middlewares:
 # organizr/organizr image version
 organizr_version: latest
 
+# UID container is running as
+organizr_puid: "{{ ansible_user_uid }}"
+# GID container is running as
+organizr_pgid: "{{ ansible_user_gid }}"
+
 # Organizr network mode (bridge|host)
 organizr_network_mode: bridge
 ```
