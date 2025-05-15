@@ -38,7 +38,7 @@ Available role variables are listed below, along with default values (see `defau
 organizr_project_name: organizr
 
 # Main service additional docker-compose options (ex: cpu_shares, deploy, ...)
-organizr_compose_service_additional_options: |
+organizr_service_additional_options: |
   #ports:
   #  - 80:80
 
@@ -55,9 +55,6 @@ organizr_version: latest
 organizr_puid: "{{ ansible_user_uid }}"
 # GID container is running as
 organizr_pgid: "{{ ansible_user_gid }}"
-
-# Organizr network mode (bridge|host)
-organizr_network_mode: bridge
 
 # Additional volumes mounted in container
 organizr_additional_volumes: []
